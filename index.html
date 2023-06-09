@@ -5,41 +5,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>个人主页</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+      background-color: #f8f9fa;
     }
 
-    header {
+    .header {
       background-color: #333;
       color: #fff;
-      padding: 20px;
+      padding: 40px;
       text-align: center;
     }
 
-    h1 {
+    .header h1 {
       margin: 0;
     }
 
-    img {
+    .profile-img {
       display: block;
       margin: 20px auto;
       width: 200px;
       border-radius: 50%;
     }
 
-    main {
-      margin: 20px;
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     }
 
-    h2 {
-      margin-bottom: 10px;
+    .section-heading {
+      margin-top: 40px;
+      margin-bottom: 20px;
     }
 
-    p {
-      margin: 0 0 10px 0;
+    .section-heading h2 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .section-content p {
+      margin-bottom: 20px;
     }
 
     .email {
@@ -47,7 +58,7 @@
       text-decoration: none;
     }
 
-    footer {
+    .footer {
       background-color: #333;
       color: #fff;
       padding: 20px;
@@ -57,27 +68,44 @@
 </head>
 
 <body>
-  <header>
+  <div class="header">
     <h1>个人主页</h1>
-  </header>
-  
-  <img src="./imgs/证件照.jpg" alt="个人照片">
+  </div>
 
-  <main>
-    <h2>简历</h2>
-    <p>2019-2023 天津大学 智能与计算学部 工学学士</p>
-    <p>2023 至今 中国科学院计算技术研究所 智能信息处理重点实验室 硕士在读</p>
+  <div class="container">
+    <img src="./imgs/证件照.jpg" alt="个人照片" class="profile-img">
 
-    <h2>研究方向</h2>
-    <p>自然语言处理、人机对话</p>
+    <div class="section-heading">
+      <h2>简历</h2>
+    </div>
+    <div class="section-content">
+      <p>2019-2023 天津大学 智能与计算学部 工学学士</p>
+      <p>2023 至今 中国科学院计算技术研究所 智能信息处理重点实验室 硕士在读</p>
+    </div>
 
-    <h2>邮箱</h2>
-    <p><a href="mailto:458635831@qq.com" class="email">458635831@qq.com</a></p>
-  </main>
+    <div class="section-heading">
+      <h2>研究方向</h2>
+    </div>
+    <div class="section-content">
+      <p>自然语言处理、人机对话。</p>
+    </div>
+    
+    <div class="section-heading">
+      <h2>邮箱</h2>
+    </div>
+    <div class="section-content">
+      <p><a href="mailto:458635831@qq.com" class="email">458635831@qq.com</a></p>
+    </div>
 
-  <footer>
+    
+  </div>
+
+  <div class="footer">
     &copy; 2023 个人主页
-  </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
